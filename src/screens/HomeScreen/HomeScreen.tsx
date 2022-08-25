@@ -6,6 +6,9 @@ import Background from "./patterns/Background/Background";
 import Feed from "./patterns/Feed/Feed";
 import Footer from "./patterns/Footer/Footer";
 import Menu from "./patterns/Menu/Menu";
+import templateConfig from "../../../template-config.yml";
+
+console.log(templateConfig);
 
 export default function HomeScreen() {
   const theme = useTheme();
