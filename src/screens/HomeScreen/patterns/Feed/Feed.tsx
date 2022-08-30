@@ -130,7 +130,7 @@ Feed.Posts = ({ posts }: FeedPostsProps) => {
       <Text variant="heading4" styleSheet={{ marginBottom: "27px" }}>
         Últimas Atualizações
       </Text>
-      {posts.map(({ slug, title, metadata }) => {
+      {posts.map(({ slug, title, metadata, image }) => {
         const { date, excerpt, url, tags } = metadata;
         return (
           <FeedPost
@@ -140,6 +140,7 @@ Feed.Posts = ({ posts }: FeedPostsProps) => {
             excerpt={excerpt}
             tags={tags}
             url={url}
+            image={image}
           />
         )
       })}
